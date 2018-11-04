@@ -9,7 +9,7 @@ const MoviesPage = ({ match, movies }) =>
   <div>
     <MoviesList movies={movies} />
     <Switch>
-      
+
       <Route path={`${match.url}/new`} component={MoviesNew}/>
       <Route path={`${match.url}/:movieId`} component={MovieShow}/>
 
