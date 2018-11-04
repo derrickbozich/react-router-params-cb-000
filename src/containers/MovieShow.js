@@ -7,7 +7,7 @@ const MovieShow = props =>
   </div>;
 
   const mapStateToProps = ({movies}, {match}) => {
-    const movie = movies.find(movie => movie.id == match.params.movieId)
+    const movie = movies.find(movie => movie.id === match.params.movieId)
 
     if (movie) {
       return { movie }
