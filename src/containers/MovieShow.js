@@ -6,8 +6,8 @@ const MovieShow = props =>
     <h3>Movie Show Component!</h3>
   </div>;
 
-  const mapStateToProps = ({movies}, ownProps) => {
-    const movie = movies.find(movie => movie.id == ownProps.match.params.movieId)
+  const mapStateToProps = ({movies}, {match}) => {
+    const movie = movies.find(movie => movie.id == match.params.movieId)
 
     if (movie) {
       return { movie }
