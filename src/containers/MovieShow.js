@@ -8,6 +8,7 @@ const MovieShow = props =>
 
 const mapStateToProps = (state, ownProps) => {
   debugger
+  return null
 }
 
 export default connect(mapStateToProps)(MovieShow);
