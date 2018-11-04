@@ -6,10 +6,11 @@ const MovieShow = props =>
     <h3>Movie Show Component!</h3>
   </div>;
 
-const mapStateToProps = ({movies}, {match}) => {
-  const movie = movies.find(({id}) => id === match.params.movieId)
-  debugger
-  return null
-}
+  const mapStateToProps = (state, ownProps) => {
+    debugger
+    return {
+      movieId: ownProps.match.params.movieId
+    }
+  }
 
 export default connect(mapStateToProps)(MovieShow);
