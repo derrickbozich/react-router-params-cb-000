@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const MovieShow = (props) =>
-  debugger
+
   <div>
     <h3></h3>
   </div>;
