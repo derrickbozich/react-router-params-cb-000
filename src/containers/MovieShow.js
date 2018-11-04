@@ -7,9 +7,12 @@ const MovieShow = props =>
   </div>;
 
   const mapStateToProps = (state, ownProps) => {
-    debugger
-    return {
-      movieId: ownProps.match.params.movieId
+    const movie = state.movies.find(movie => movie.id == ownProps.match.params.movieId)
+   
+    if (movie) {
+      return { movie }
+    } else {
+      return { movie: {} }
     }
   }
 
