@@ -7,7 +7,7 @@ const MovieShow = props =>
   </div>;
 
   const mapStateToProps = ({movies}, ownProps) => {
-    const movie = state.movies.find(movie => movie.id == ownProps.match.params.movieId)
+    const movie = movies.find(movie => movie.id == ownProps.match.params.movieId)
 
     if (movie) {
       return { movie }
