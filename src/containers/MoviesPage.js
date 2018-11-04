@@ -9,8 +9,9 @@ const MoviesPage = ({ match, movies }) =>
   <div>
     <Switch>
       <MoviesList movies={movies} />
-      <Route path={`${match.url}/:movieId`} component={MovieShow}/>
       <Route path={`${match.url}/new`} component={MoviesNew}/>
+      <Route path={`${match.url}/:movieId`} component={MovieShow}/>
+
     </Switch>
 
   </div>;
