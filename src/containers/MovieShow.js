@@ -6,7 +6,7 @@ const MovieShow = props =>
     <h3>Movie Show Component!</h3>
   </div>;
 
-const mapStateToProps = ({movies}, ownProps) => {
+const mapStateToProps = ({movies}, {match}) => {
   debugger
   return null
 }
