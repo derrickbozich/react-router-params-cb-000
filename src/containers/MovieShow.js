@@ -6,4 +6,8 @@ const MovieShow = props =>
     <h3>Movie Show Component!</h3>
   </div>;
 
-export default MovieShow;
+const mapStateToProps = (state, ownProps) => {
+  
+}
+
+export default connect(mapStateToProps)(MovieShow);
