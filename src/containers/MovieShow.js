@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const MovieShow = ({movie}) =>
+const MovieShow = (props) =>
   <div>
     <h3>{movie}</h3>
   </div>;
