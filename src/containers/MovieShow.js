@@ -7,8 +7,8 @@ const MovieShow = ({movie}) =>
     <h3>{movie.title}</h3>
   </div>;
 
-  const mapStateToProps = ({movies}, {match}) => {
-    const movie = movies.find(movie => movie.id === match.params.movieId)
+  const mapStateToProps = (state, ownProps) => {
+    const movie = state.movies.find(movie => movie.id == ownProps.match.params.movieId)
 
     if (movie) {
       return { movie }
@@ -16,5 +16,4 @@ const MovieShow = ({movie}) =>
       return { movie: {} }
     }
   }
-
 export default connect(mapStateToProps)(MovieShow);
