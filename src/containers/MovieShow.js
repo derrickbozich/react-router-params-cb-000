@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const MovieShow = (props) =>
   <div>
-    <h3>{props}</h3>
+    <h3></h3>
   </div>;
 
   const mapStateToProps = ({movies}, {match}) => {
